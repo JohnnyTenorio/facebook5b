@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: registro-datos
-    env: php
-    plan: free
-    buildCommand: ""
-    startCommand: ""
-    rootDir: .
