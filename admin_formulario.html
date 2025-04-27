@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - AdminLeo</title>
+    <link rel="stylesheet" href="admin_panel.css?v=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Panel de Administración - LEBMA</h1>
+</header>
+
+<nav>
+    <button onclick="mostrarSeccion('usuarios')">Registro de Usuarios</button>
+    <button onclick="mostrarSeccion('datos')">Datos Ingresados</button>
+</nav>
+
+<main>
+    <section id="usuarios" style="display:block;">
+        <h2>Registro de Usuarios</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Contraseña</th>
+                </tr>
+            </thead>
+            <tbody id="tablaUsuarios">
+                <!-- Aquí se llenará dinámicamente -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="datos" style="display:none;">
+        <h2>Datos Ingresados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Sexo</th>
+                    <th>Estado Civil</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                </tr>
+            </thead>
+            <tbody id="tablaDatos">
+                <!-- Aquí se llenará dinámicamente -->
+            </tbody>
+        </table>
+    </section>
+
+    <a href="index.html" class="btn-regresar">Cerrar Sesion</a>
+    <a href="editar_datos.php" class="boton-editar">Editar Datos</a>
+
+</main>
+
+<script src="admin_panel.js"></script>
+</body>
+</html>

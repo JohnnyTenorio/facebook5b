@@ -1,0 +1,108 @@
+/* Reset de márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Establecer una fuente general para la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Contenedor principal del formulario */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fc0e0e;
+}
+
+/* Estilo para las etiquetas (labels) */
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo para los campos de texto e inputs */
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el botón de envío */
+input[type="submit"] {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color del botón al pasar el ratón */
+input[type="submit"]:hover {
+    background-color: #000000;
+}
+
+
+
+/* Estilo para los mensajes de error o éxito (si se usan en el futuro) */
+.alert {
+    padding: 15px;
+    background-color: #f44336;
+    color: white;
+    margin-top: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Estilo para los campos con errores */
+input:invalid {
+    border-color: red;
+}
+
+/* Estilo para los campos correctamente completados */
+input:valid {
+    border-color: green;
+}
+
+/* Estilo para el botón de regresar */
+.BtnRe {
+    display: inline-block;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #FF5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.BtnRe:hover {
+    background-color: #e64a19;
+}

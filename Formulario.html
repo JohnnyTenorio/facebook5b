@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Persona</title>
+    <link rel="stylesheet" href="style.css?v=1.0">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de Registro de Persona</h2>
+        <form action="procesar.php" method="POST">
+            <!-- Campo para el nombre completo -->
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <!-- Campo para la fecha de nacimiento -->
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+
+            <!-- Campo para el sexo (Menú desplegable) -->
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo_id" required>
+                <option value="1">Masculino</option>
+                <option value="2">Femenino</option>
+            </select><br><br>
+
+            <!-- Campo para el estado civil (Menú desplegable) -->
+            <label for="estadoCivil">Estado Civil:</label>
+            <select id="estadoCivil" name="EstadoCivil" required>
+                <option value="1">Soltero</option>
+                <option value="2">Casado</option>
+                <option value="3">Divorciado</option>
+                <option value="4">Unido</option>
+                <option value="5">Viudo</option>
+            </select><br><br>
+
+            <!-- Campo para la dirección -->
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" name="calle" required><br><br>
+
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required><br><br>
+
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required><br><br>
+
+            <!-- Campo para el número de teléfono -->
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required><br><br>
+
+            <!-- Botón para enviar el formulario -->
+            <input type="submit" value="Registrar Persona">
+        </form>
+        <a href="index.html" class="BtnRe">Cerrar Sesion</a>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
